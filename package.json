@@ -102,8 +102,7 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "dayjs": "patches/dayjs.patch",
-      "extract-zip@2.0.1": "patches/extract-zip@2.0.1.patch"
+      "dayjs": "patches/dayjs.patch"
     },
     "onlyBuiltDependencies": [
       "@napi-rs/pinyin",
@@ -165,7 +164,8 @@
       "minimatch": "11.0.1",
       "glob": "14.0.2",
       "zod": "4.6.6",
-      "deepmerge": "npm:@stackline/deepmerge@1.1.0"
+      "deepmerge": "npm:@stackline/deepmerge@1.1.0",
+      "extract-zip": "npm:@electron-internal/extract-zip@1.0.6"
     }
   },
   "resolutions": {
@@ -182,5 +182,8 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }
